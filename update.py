@@ -37,9 +37,16 @@ RAM_free = round(int(RAM_stats[2]) / 1000,1)
 
 DISK_stats = getDiskSpace()
 DISK_total = DISK_stats[0]
-DISK_free = DISK_stats[1]
+DISK_used = DISK_stats[1]
+DISK_free = DISK_stats[2]
 DISK_perc = DISK_stats[3]
 
+print(CPU_temp)
+print(CPU_usage)
+print(RAM_free)
+print(RAM_used)
+print(DISK_free)
+print(DISK_used)
 
 with open('/var/www/html/api.json', 'r') as f:
     json_data = json.load(f)
@@ -47,6 +54,7 @@ with open('/var/www/html/api.json', 'r') as f:
     json_data['ram_free'] = RAM_free
     json_data['ram_used'] = RAM_used
     json_data['space_free'] = DISK_free
+    json_data['space_used'] = DISK_used
     json_data['cpuusage'] = CPU_usage
 
 with open('/var/www/html/api.json', 'w') as f:
