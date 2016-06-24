@@ -63,7 +63,7 @@ This part will cover how to install the api on your pine64 using node.js, specif
 * Change the path in update64.py to the path of your api.json-file.(line 51)
 * Move the update64.py file to a convenient location for you
 * Run `crontab -e` and select the 2nd option (crontab will be used for running the update.py file repeatedly)
-* type `*/1 * * * * python /<LOCATION OF UPDATE64.PY>/update.py`
+* type `*/1 * * * * python /<LOCATION OF UPDATE64.PY>/update64.py`
 * type `* * * * * http-server <LOCATION OF API.JSON>` (if you want to run it under a specific port add `-p <PORT>`)
 * Reboot.
 
