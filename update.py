@@ -51,10 +51,10 @@ print(DISK_used)
 with open('/var/www/html/api.json', 'r') as f:
     json_data = json.load(f)
     json_data['temperature'] = CPU_temp
-    json_data['ram_free'] = RAM_free
-    json_data['ram_used'] = RAM_used
     json_data['ram_free'] = str(RAM_free) + "MB"
     json_data['ram_used'] = str(RAM_used) + "MB"
+    json_data['space_free'] = DISK_free
+    json_data['space_used'] = DISK_used
     json_data['cpuusage'] = CPU_usage
 
 with open('/var/www/html/api.json', 'w') as f:
