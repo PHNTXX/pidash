@@ -11,6 +11,6 @@ Installation only differs in which version of update.py is needed. If you are us
 * Download and install Apache2, the webserver used for getting the json file into the net `sudo apt-get install -y apache2`
 * Clone the "base-api"-branch of this repo using `git clone -b base-api https://github.com/PHNTXX/pidash.git`
 * If you are running a Raspberry Pi, go into the directory of your newly cloned branch and use `sudo mv api.php update.py /var/www/html/` to move the api.php file as well as the update.py file to the folder that apache2 uses
-* If you are running a Pine64, also go into the directory of the cloned branch, but instead you need to use `sudo mv api.php update64.py /var/www/html/` and `sudo mv /var/www/html/update64.py /var/www/html/update.py` to achieve the same thing.
+* If you are running a Pine64, also go into the directory of the cloned branch, and use `sudo mv api.php update64.py /var/www/html/` and `sudo mv /var/www/html/update64.py /var/www/html/update.py` to achieve the same thing.
 * Add www-data to the sudoers list by typing `sudo visudo` and then adding `www-data ALL=NOPASSWD: ALL` to the file. This will allow the php-script to execute its commands.
 * Reboot.
