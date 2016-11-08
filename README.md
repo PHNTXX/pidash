@@ -10,8 +10,6 @@ Installation only differs in the version of update.py which is needed. If you ar
 
 * Download and install Apache2, the webserver used for getting the json file into the net `sudo apt-get install -y apache2`
 * Clone the "base-api"-branch of this repo using `git clone -b base-api https://github.com/PHNTXX/pidash.git`
-* Go into the directory of the newly cloned branch and use `sudo mv api.json /var/www/html/` to move the api.json file to the folder that apache2 uses
-* Move the update.py file to a convenient location for you
-* Run `crontab -e` and select the 2nd option (crontab will be used for running the update.py file repeatedly)
-* type `*/1 * * * * python /<LOCATION OF UPDATE.PY>/update.py`
+* Go into the directory of the newly cloned branch and use `sudo mv api.php update.py /var/www/html/` to move the api.php file as well as the update.py file to the folder that apache2 uses
+* Add www-data to the sudoers list by typing `sudo visudo` and then adding `www-data ALL=NOPASSWD: ALL` to the file. This will allow the php-script to execute its commands.
 * Reboot.
