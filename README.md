@@ -1,6 +1,6 @@
 # pidash (API for getting Information about your Single Board Computer!)
 pidash pushes the cpu temperature, cpu usage, available as well as used sd-card and ram space to a json file.
-credit goes to [this post](https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=22180)
+credit goes to [this post](https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=22180) for the base python script and to startbootstrap for [this template](https://startbootstrap.com/template-overviews/grayscale/)
 
 ## master branch
 
