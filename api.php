@@ -1,6 +1,5 @@
 <?php
 header('Content-Type: application/json');
-
 if($_GET["passwd"] == "none") {
   $input = shell_exec('python update.py');
   $array = explode("\n", $input);
@@ -8,5 +7,5 @@ if($_GET["passwd"] == "none") {
 } else {
   $output = array('ram_free' => 'password invalid.');
 }
-  echo json_encode($output);
+echo json_encode($output);
 ?>
