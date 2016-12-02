@@ -14,3 +14,7 @@ This branch serves the main API / code that will be running on the device you wa
 * _If you are running a Pine64_, also go into the directory of the cloned branch, and use `sudo mv api.php update64.py /var/www/html/` and `sudo mv /var/www/html/update64.py /var/www/html/update.py` to achieve the same thing.
 * Add www-data to the sudoers list by typing `sudo visudo` and then adding `www-data ALL=NOPASSWD: ALL` to the file. This will allow the php-script to execute its commands.
 * Reboot.
+
+## ios-app
+
+The ios-companion to this API can be found [here](https://github.com/phntxx/pidash_ios/).
