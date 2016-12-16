@@ -2,7 +2,7 @@ import json
 import os
 
 def getCPUtemperature():
-    res = os.popen('sudo vcgencmd measure_temp').readline()
+    res = os.popen('sudo /opt/vc/bin/vcgencmd measure_temp').readline()
     return(res.replace("temp=","").replace("'C\n",""))
 
 def getRAMinfo():
@@ -34,6 +34,7 @@ RAM_stats = getRAMinfo()
 RAM_total = round(int(RAM_stats[0]) / 1000,1)
 RAM_used = round(int(RAM_stats[1]) / 1000,1)
 RAM_free = round(int(RAM_stats[2]) / 1000,1)
+RAM_perc = int((float(RAM_used) / float(RAM_total)) * 100)
 
 DISK_stats = getDiskSpace()
 DISK_total = DISK_stats[0]
@@ -46,4 +47,5 @@ print(RAM_free)
 print(RAM_used)
 print(DISK_free)
 print(DISK_used)
-
+print(float(DISK_perc[:-1])/100 )
+print(float(RAM_perc)/100)
