@@ -34,6 +34,7 @@ RAM_stats = getRAMinfo()
 RAM_total = round(int(RAM_stats[0]) / 1000,1)
 RAM_used = round(int(RAM_stats[1]) / 1000,1)
 RAM_free = round(int(RAM_stats[2]) / 1000,1)
+RAM_perc = int((float(RAM_used) / float(RAM_total)) * 100)
 
 DISK_stats = getDiskSpace()
 DISK_total = DISK_stats[0]
