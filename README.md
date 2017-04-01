@@ -9,7 +9,7 @@ This branch serves the main API / code that will be running on the device you wa
 ### installation
 
 * Download and install apache2, php5 and python, the webserver used for getting the json file into the net and the package that makes both the update-file and the file used on the webserver run `sudo apt-get install -y python apache2 php5 libapache2-mod-php5`
-* Clone the "base-api"-branch of this repo using `git clone https://github.com/PHNTXX/pidash.git`
+* Clone the "base-api"-branch of this repo using `git clone https://github.com/PHNTXX/sbcdash-server.git`
 * _If you are running on a Debian-Based System, like Raspbian for the Rapsberry Pi, go into the directory of your newly cloned branch and use `sudo mv api.php update.py /var/www/html/` to move the api.php file as well as the update.py file to the folder that apache2 uses
 * _If you are running an Ubuntu-Based System, like ARMBuntu for the NanoPi Neo or Ubuntu on Pine64, also go into the directory of the cloned branch, and use `sudo mv api.php update64.py /var/www/html/` and `sudo mv /var/www/html/update64.py /var/www/html/update.py` to achieve the same thing.
 * Add www-data to the sudoers list by typing `sudo visudo` and then adding `www-data ALL=NOPASSWD: ALL` to the file. This will allow the php-script to execute its commands.
