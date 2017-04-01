@@ -1,6 +1,6 @@
-# pidash (API for getting Information about your Single Board Computer!)
-pidash pushes the cpu temperature, cpu usage, available as well as used sd-card and ram space to a json file.
-credit goes to [this post](https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=22180) for the base python script and to startbootstrap for [this template](https://startbootstrap.com/template-overviews/grayscale/)
+# sbcdash (API for getting Information about your Single Board Computer!)
+sbcdash pushes the cpu temperature, cpu usage, available as well as used sd-card and ram space to a webserver.
+credit goes to [this post](https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=22180) for the base python script and to startbootstrap for [this template](https://startbootstrap.com/template-overviews/grayscale/) which is used for the index.php - site.
 
 ## master branch
 
@@ -15,6 +15,6 @@ This branch serves the main API / code that will be running on the device you wa
 * Add www-data to the sudoers list by typing `sudo visudo` and then adding `www-data ALL=NOPASSWD: ALL` to the file. This will allow the php-script to execute its commands.
 * (OPTIONAL) Reboot.
 
-## ios-app
+## sbcdash mobile client
 
-The ios-companion to this API can be found [here](https://github.com/phntxx/pidash_ios/).
+The mobile companion-app to this API can be found [here](https://github.com/phntxx/sbcdash-client/).
