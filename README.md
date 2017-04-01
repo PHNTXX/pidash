@@ -8,10 +8,14 @@ This branch serves the main API / code that will be running on the device you wa
 ## installation
 
 ### raspberry pi
-1. install your webserver of choice, php5 and the python compiler. SBCDash was tested to run on apache2, so type: \n `sudo apt-get install -y python apache2 php5 libapache2-mod-php5 git`
-2. clone this repo using: \n `git clone https://github.com/PHNTXX/sbcdash-server.git`
-3. go to the directory of your newly cloned repo and move the required files into the required location of apache2 using: \n `mv api.php index.php update.py /var/www/html/`
-4. allow the php-script to execute its commands by adding www-data to the sudoers list by typing: \n `sudo visudo` and then adding \n `www-data ALL=NOPASSWD: ALL` to the file.
+1. install your webserver of choice, php5 and the python compiler. SBCDash was tested to run on apache2, so type: 
+`sudo apt-get install -y python apache2 php5 libapache2-mod-php5 git`
+2. clone this repo using: 
+`git clone https://github.com/PHNTXX/sbcdash-server.git`
+3. go to the directory of your newly cloned repo and move the required files into the required location of apache2 using:
+`mv api.php index.php update.py /var/www/html/`
+4. allow the php-script to execute its commands by adding www-data to the sudoers list by typing: 
+`sudo visudo` and then adding \n `www-data ALL=NOPASSWD: ALL` to the file.
 
 ### pine64 / nanopi neo
 1. install your webserver of choice, php5 and the python compiler. SBCDash was tested to run on apache2, so type:
