@@ -27,10 +27,10 @@ sbcDash was tested using Apache, so it is recommended - though not required - to
 `sudo apt-get install -y apache2 php5 libapache2-mod-php5`
 
 2. Clone the sbcdash repository into the /var/www/html directory (standard directory for Apache2):   
-`git clone https://github.com/phntxx/sbcdash-server /var/www/html`
+`git clone https://github.com/phntxx/sbcDash-server /var/www/html`
 
 And you're done! Now open up a web browser and navigate to   
-`http://<IP of your single-board computer>/sbcdash-server/api.php`
+`http://<IP of your single-board computer>/sbcDash-server/api.php`
 
 ## Adding a password
 
