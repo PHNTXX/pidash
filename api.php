@@ -12,7 +12,7 @@ function getCPUTemperature () {
 // Return current RAM usage. [total, used, free, shared, buff/cache, available]
 function getRAMUsage () {
   exec('free -h', $usage);
-  preg_match_all('/\s+([0-9]+)/', $usage[1], $value);
+  preg_match_all('/\s+([0.00-9.00]+([A-Z]|[%]))/', $usage[1], $value);
   return array($value[1][0], $value[1][1], $value[1][2], $value[1][3], $value[1][4], $value[1][5]);
 }
 
