@@ -29,7 +29,7 @@ sbcDash was tested using Apache, so it is recommended - though not required - to
 2. Clone the sbcdash repository into the /var/www/html directory (standard directory for Apache2):   
 `git clone https://github.com/phntxx/sbcdash-server /var/www/html`
 
-And you're done! Now open up a web browser and navigate to
+And you're done! Now open up a web browser and navigate to   
 `http://<IP of your single-board computer>/sbcdash-server/api.php`
 
 ## Adding a password
